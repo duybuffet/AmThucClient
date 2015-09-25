@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:textColor="#fff" 
+        android:text="hel"/>
+
+    <TextView
+        android:id="@+id/txtPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#fff"  />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@drawable/player_online"
+        android:text="đang chờ" />
+
+</LinearLayout>

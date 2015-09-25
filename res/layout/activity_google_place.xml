@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@+id/mapTypes">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/mapTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Chọn kiể bản đồ:" />
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:id="@+id/selectMapTypes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textDirection="inherit" />
+    </LinearLayout>
+
+</RelativeLayout>
